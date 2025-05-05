@@ -1,0 +1,80 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Box styles */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    margin: 20px auto;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+/* Keyframes for animation */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: #f39c12;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Trigger animation */
+.animate {
+    animation: scaleAnimation 2s ease-in-out; /* Trigger the keyframe animation */
+}
+
+/* Input and Form Styles */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
